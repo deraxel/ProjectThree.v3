@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.deraxel.template.Main2Activity">
+
+    <RelativeLayout
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:id="@+id/center_line"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/adrive"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/driveA"/>
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bdrive"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/driveB"/>
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cdrive"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/driveC"/>
+
+    <ImageButton
+        android:layout_width="67sp"
+        android:layout_height="200sp"
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrow"
+        android:background="@drawable/blankpxl"
+        android:onClick="back"
+        android:id="@+id/backButton"
+        android:tint="#003cff"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/driveA"
+        android:layout_toStartOf="@+id/driveA" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginEnd="20sp"
+        android:textSize="15sp"
+        android:id="@+id/fDirectory"
+        android:background="#dddddd"
+        android:layout_below="@id/backButton"/>
+
+    <RelativeLayout
+        android:id="@+id/leftBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="300sp"
+        android:background="#ff0000"
+        android:layout_below="@id/fDirectory"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@id/center_line"
+        android:layout_alignRight="@id/center_line" />
+
+    <RelativeLayout
+        android:id="@+id/rightBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="300sp"
+        android:background="#04f92d"
+        android:layout_below="@id/fDirectory"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@id/center_line"
+        android:layout_alignStart="@id/center_line"/>
+
+    <ImageButton
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/folder"
+        android:background="@drawable/blankpxl"
+        android:onClick="folder1"
+        android:id="@+id/folder1"
+        android:layout_below="@id/fDirectory"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:visibility="invisible"
+        android:background="#d40101"
+        android:textSize="20sp"
+        android:onClick="folder1"
+        android:id="@+id/folder1text"
+        android:layout_below="@id/fDirectory"
+        android:layout_toRightOf="@id/folder1"
+        android:layout_toEndOf="@id/folder1"
+        android:layout_alignRight="@id/center_line"
+        android:layout_alignEnd="@id/center_line"/>
+
+    <ImageButton
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/folder"
+        android:background="@drawable/blankpxl"
+        android:onClick="folder2"
+        android:id="@+id/folder2"
+        android:layout_below="@id/folder1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:visibility="invisible"
+        android:background="#d40101"
+        android:textSize="20sp"
+        android:onClick="folder2"
+        android:id="@+id/folder2text"
+        android:layout_below="@id/folder1"
+        android:layout_toRightOf="@id/folder1"
+        android:layout_toEndOf="@id/folder1"
+        android:layout_alignRight="@id/center_line"
+        android:layout_alignEnd="@id/center_line" />
+    
+    <ImageButton
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/folder"
+        android:background="@drawable/blankpxl"
+        android:onClick="folder3"
+        android:id="@+id/folder3"
+        android:layout_below="@id/folder2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:visibility="invisible"
+        android:background="#d40101"
+        android:onClick="folder3"
+        android:textSize="20sp"
+        android:id="@+id/folder3text"
+        android:layout_below="@id/folder2"
+        android:layout_toRightOf="@id/folder1"
+        android:layout_toEndOf="@id/folder1"
+        android:layout_alignRight="@id/center_line"
+        android:layout_alignEnd="@id/center_line"/>
+    
+    <ImageButton
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/folder"
+        android:background="@drawable/blankpxl"
+        android:onClick="folder4"
+        android:id="@+id/folder4"
+        android:layout_below="@id/folder3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:visibility="invisible"
+        android:background="#d40101"
+        android:textSize="20sp"
+        android:onClick="folder4"
+        android:id="@+id/folder4text"
+        android:layout_below="@id/folder3"
+        android:layout_toRightOf="@id/folder1"
+        android:layout_toEndOf="@id/folder1"
+        android:layout_alignRight="@id/center_line"
+        android:layout_alignEnd="@id/center_line"/>
+    
+    <ImageButton
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/folder"
+        android:background="@drawable/blankpxl"
+        android:onClick="folder5"
+        android:id="@+id/folder5"
+        android:layout_below="@id/folder4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:visibility="invisible"
+        android:background="#d40101"
+        android:textSize="20sp"
+        android:onClick="folder5"
+        android:id="@+id/folder5text"
+        android:layout_below="@id/folder4"
+        android:layout_toRightOf="@id/folder1"
+        android:layout_toEndOf="@id/folder1"
+        android:layout_alignRight="@id/center_line"
+        android:layout_alignEnd="@id/center_line"/>
+    
+    <ImageButton
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/file"
+        android:background="@drawable/blankpxl"
+        android:onClick="file1"
+        android:id="@+id/file1"
+        android:layout_below="@id/fDirectory"
+        android:layout_alignLeft="@id/center_line"
+        android:layout_alignStart="@id/center_line"/>
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:background="#05d127"
+        android:onClick="file1"
+        android:id="@+id/file1text"
+        android:layout_below="@id/fDirectory"
+        android:layout_toRightOf="@id/file1"
+        android:layout_toEndOf="@id/file1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+    
+    <ImageButton
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/file"
+        android:background="@drawable/blankpxl"
+        android:onClick="file2"
+        android:id="@+id/file2"
+        android:layout_below="@id/file1"
+        android:layout_alignLeft="@id/center_line"
+        android:layout_alignStart="@id/center_line"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:visibility="invisible"
+        android:background="#05d127"
+        android:textSize="20sp"
+        android:onClick="file2"
+        android:id="@+id/file2text"
+        android:layout_below="@id/file1"
+        android:layout_toRightOf="@id/file1"
+        android:layout_toEndOf="@id/file1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+    
+    <ImageButton
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/file"
+        android:background="@drawable/blankpxl"
+        android:onClick="file3"
+        android:id="@+id/file3"
+        android:layout_below="@id/file2"
+        android:layout_alignLeft="@id/center_line"
+        android:layout_alignStart="@id/center_line"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:background="#05d127"
+        android:onClick="file3"
+        android:id="@+id/file3text"
+        android:layout_below="@id/file2"
+        android:layout_toRightOf="@id/file1"
+        android:layout_toEndOf="@id/file1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageButton
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/file"
+        android:background="@drawable/blankpxl"
+        android:onClick="file4"
+        android:id="@+id/file4"
+        android:layout_below="@id/file3"
+        android:layout_alignLeft="@id/center_line"
+        android:layout_alignStart="@id/center_line"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:visibility="invisible"
+        android:background="#05d127"
+        android:textSize="20sp"
+        android:onClick="file4"
+        android:id="@+id/file4text"
+        android:layout_below="@id/file3"
+        android:layout_toRightOf="@id/file1"
+        android:layout_toEndOf="@id/file1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageButton
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"
+        android:src="@drawable/file"
+        android:background="@drawable/blankpxl"
+        android:onClick="file5"
+        android:id="@+id/file5"
+        android:layout_below="@id/file4"
+        android:layout_alignLeft="@id/center_line"
+        android:layout_alignStart="@id/center_line"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:visibility="invisible"
+        android:background="#05d127"
+        android:textSize="20sp"
+        android:onClick="file5"
+        android:id="@+id/file5text"
+        android:layout_below="@id/file4"
+        android:layout_toRightOf="@id/file1"
+        android:layout_toEndOf="@id/file1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:id="@+id/fileTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="#cccccc"
+        android:textSize="20sp"
+        android:gravity="left|center_vertical|start"
+        android:hint="FILE/FOLDER NAME"
+        android:layout_below="@id/file5"/>
+
+    <EditText
+        android:id="@+id/fileData"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="#cccccc"
+        android:textSize="20sp"
+        android:gravity="top|left|start"
+        android:hint="FILE TEXT"
+        android:layout_below="@id/fileTitle"/>
+
+    <Button
+        android:layout_width="175sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="10sp"
+        android:id="@+id/addFile"
+        android:text="ADD FILE"
+        android:textSize="20sp"
+        android:onClick="addFile"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fileData"/>
+
+    <Button
+        android:layout_width="175sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginEnd="10sp"
+        android:id="@+id/addFolder"
+        android:text="ADD FOLDER"
+        android:onClick="addFolder"
+        android:textSize="20sp"
+        android:layout_toLeftOf="@id/addFile"
+        android:layout_toStartOf="@id/addFile"
+        android:layout_below="@id/fileData"/>
+
+    <Button
+        android:layout_width="175sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginStart="10sp"
+        android:id="@+id/deleteFile"
+        android:text="DELETE FILE"
+        android:textSize="20sp"
+        android:onClick="deleteFile"
+        android:layout_toRightOf="@id/addFile"
+        android:layout_toEndOf="@id/addFile"
+        android:layout_below="@id/fileData"/>
+
+</RelativeLayout>
